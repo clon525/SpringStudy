@@ -11,6 +11,7 @@ public class MessageWithPostBeanProcessorRunner {
         Message message = (Message) context.getBean("message");
         System.out.println("\n==================================");
         System.out.println(message.getMessage());
+        System.out.println(message.getCounts());
         System.out.println("==================================\n");
         context.registerShutdownHook();
     }
